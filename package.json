@@ -1,5 +1,5 @@
 {
-  "name": "secu-sign",
+  "name": "m-lib",
   "version": "1.0.0",
   "description": "",
   "type": "commonjs",
@@ -34,20 +34,7 @@
     "lint": "eslint . --ext .mjs,.cjs,.js,.ts",
     "postinstall": "if [ -e node_modules ]\nthen\npatch-package\nelse\nrm -rf ./src&&rm -rf ./test-configs&&rm -rf ./e2e&&cp ./dist/package-lock.json ./\nfi"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Gearlay/SecuSign.git"
-  },
-  "keywords": [
-    "web3",
-    "crypto"
-  ],
-  "author": "gearlay",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Gearlay/SecuSign/issues"
-  },
-  "homepage": "https://github.com/Gearlay/SecuSign#readme",
   "devDependencies": {
     "@types/crypto-js": "^4.2.1",
     "@types/jest": "^29.5.11",
