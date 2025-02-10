@@ -1,0 +1,6 @@
+dist/
+playground/
+tools/
+coverage/
+_dev/
+dist-dev/
