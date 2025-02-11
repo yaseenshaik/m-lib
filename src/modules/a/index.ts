@@ -1,5 +1,5 @@
 // This file doesn't import anything
 
-export const a = () => {
+export const noImports = () => {
   console.log('hello from a!');
 };

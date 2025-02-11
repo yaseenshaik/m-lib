@@ -3,7 +3,7 @@
 // and another that doesn't
 import { connect } from 'socket.io-client';
 
-export const b = () => {
+export const withImports = () => {
   console.log('hello from b!');
   const socket = connect(`http://127.0.0.1:8080`);
   return new Promise((resolve) => {
@@ -16,6 +16,6 @@ export const b = () => {
   });
 };
 
-export const c = () => {
+export const unusedImports = () => {
   console.log('hello from c!');
 };
