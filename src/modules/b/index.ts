@@ -4,10 +4,11 @@
 import { Server } from 'socket.io';
 
 export const withImports = () => {
+  console.log('hello from withImports!');
   const server = new Server();
   return server;
 };
 
 export const unusedImports = () => {
-  console.log('hello from c!');
+  console.log('hello from unusedImports!');
 };
