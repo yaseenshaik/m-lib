@@ -1,19 +1,11 @@
 // This file imports a npm lib and exports two functions
 // one that uses the imported lib
 // and another that doesn't
-import { connect } from 'socket.io-client';
+import { Server } from 'socket.io';
 
 export const withImports = () => {
-  console.log('hello from b!');
-  const socket = connect(`http://127.0.0.1:8080`);
-  return new Promise((resolve) => {
-    socket.on('connect', () => {
-      resolve(socket);
-    });
-    socket.on('disconnect', () => {
-      resolve(null);
-    });
-  });
+  const server = new Server();
+  return server;
 };
 
 export const unusedImports = () => {
