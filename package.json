@@ -33,9 +33,9 @@
     "test:cov": "rm -rf dist-dev && jest --coverage --no-cache --runInBand --config ./test-configs/e2e/jest.config.js --forceExit --verbose",
     "lint": "eslint . --ext .mjs,.cjs,.js,.ts",
     "postinstall": "if [ -e node_modules ]\nthen\npatch-package\nelse\nrm -rf ./src&&rm -rf ./test-configs&&rm -rf ./e2e&&cp ./dist/package-lock.json ./\nfi",
-    "publish:patch": "SEM_VER=`npm version patch` && git push origin ${SEM_VER:1}",
-    "publish:minor": "SEM_VER=`npm version minor` && git push origin ${SEM_VER:1}",
-    "publish:major": "SEM_VER=`npm version major` && git push origin ${SEM_VER:1}"
+    "publish:patch": "SEM_VER=`npm version patch` && git push origin ${SEM_VER}",
+    "publish:minor": "SEM_VER=`npm version minor` && git push origin ${SEM_VER}",
+    "publish:major": "SEM_VER=`npm version major` && git push origin ${SEM_VER}"
   },
   "license": "ISC",
   "devDependencies": {
